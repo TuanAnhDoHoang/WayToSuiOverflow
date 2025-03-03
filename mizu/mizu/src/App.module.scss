@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .left-sidebar {
+        position: absolute;
+        left: 0
+    }
+
+    .right-sidebar {
+        position: absolute;
+        right: 0
+    }
+
+}

@@ -1,0 +1,87 @@
+.create-story {
+    display: flex;
+    flex-direction: column;
+    width: 112px;
+    position: relative;
+    height: 200px;
+    align-items: center;
+    margin-left: 10px;
+
+    .plus {
+        z-index: 1;
+        position: absolute;
+        margin-top: 130px;
+        border-radius: 50%;
+        border: 5px solid black;
+        width: 40px;
+        height: 40px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0
+    }
+
+    .top {
+        width: 100%;
+        height: 150px;
+
+        .story-avatar {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .bottom {
+        background-color: rgb(204, 233, 244);
+        width: 100%;
+        height: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .title {
+            position: absolute;
+            bottom: 10px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+}
+
+.story {
+    height: 200px;
+    width: 112px;
+    margin-left: 5px;
+    position: relative;
+
+    .user-avatar {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+
+        .avatar {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 5px solid aqua;
+        }
+    }
+
+    .user-story {
+        width: 112px;
+        height: 200px;
+
+        .story-image {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

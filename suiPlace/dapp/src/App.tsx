@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
 import './App.css'
+import { CompactPicker } from 'react-color'
+import PlaceBoard from './components/PlaceBoard';
+import { ConnectButton } from '@mysten/dapp-kit';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [color, setColor] = useState('#ffffff');
+  const handleChangeColor = (colorChange: any) => {
+    setColor(colorChange);
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="wrapper">
+      {/* <ConnectButton /> */}
+      <PlaceBoard />
+      <div className="description">
+        <h2 className='title'>Sui Place</h2>
+        <p className='text'>Are you ready to join the Sui community in placing a tile on the board? Select a color then ctrl+click (win) or cmd+click (mac) to place</p>
+        <div className='color-board'>
+          <CompactPicker color={color} onChange={(colorChange) => handleChangeColor(colorChange)} />
+        </div>
+        <div className="footer">
+          <p>
+            Sui Place is currently only available on devnet, make sure your wallet network
+            is properly set.
+          </p>
+          <a href="https://jurenka.software/"><b>Made with ❤️ by https://jurenka.software/</b></a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
 export default App

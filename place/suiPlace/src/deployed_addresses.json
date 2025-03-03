@@ -1,0 +1,13 @@
+{
+    "types": {
+        "PLACE": "0x206a8856f184bba87d1e4cb440da380ea2d3fec3e65cba4abd4ba22769a86f2f::sui_place::Place"
+    },
+    "PACKAGE_ID": "0x206a8856f184bba87d1e4cb440da380ea2d3fec3e65cba4abd4ba22769a86f2f",
+    "PLACE": "0xa304c78d2b7088ad9e4391eb425294a177e6b91a50e79110fd82c76d22dafc88",
+    "QUADRANT_ADDRESSES": [
+        "0x4949f4eb734c32f4cab3842fafc7ebf53837a0a3fe82e6acface787ce0071212",
+        "0x7b2acdd4a4513d3f7df8cb72a2cc1a3d7375cb06f1eeeab2b92a85cf6f943b3e",
+        "0x7ee9ceefa78e2eca370a5f21dccc71749cb972a72cd8b670c278a9290fa4780f",
+        "0xc04852583fa93b06b539111a6112bb5c2504473a9f36e159970c8ba509ca2338"
+    ]
+}

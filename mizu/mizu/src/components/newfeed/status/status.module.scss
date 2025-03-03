@@ -1,0 +1,59 @@
+.wrapper {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px groove rgb(191, 255, 255);
+    box-shadow: 0.5px 1px;
+}
+
+.status-bar {
+    margin: 20px;
+}
+
+.status-write-section {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .status-input {
+        height: 40px;
+        width: 420px;
+        border-radius: 20px;
+
+        border-color: beige;
+
+        :focus {
+            outline: none;
+        }
+    }
+}
+
+.status-funtions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .live-stream,
+    .image-video,
+    .emotional {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon {
+        margin-right: 5px;
+    }
+
+    :hover {
+        background-color: rgb(209, 238, 246);
+        cursor: pointer;
+    }
+}

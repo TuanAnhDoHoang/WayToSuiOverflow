@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.place {
+    border: 1px solid black;
+    width: 30rem;
+    height: 40rem;
+    margin-right: 20px;
+}
+
+.description {
+    width: 20rem;
+    font-size: 20px;
+    color: black;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.color-board {
+    margin-top: 20px;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 20px
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+}
+
+.connect {
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .connect-title {
+        color: rgb(42, 111, 115);
+    }
+}
