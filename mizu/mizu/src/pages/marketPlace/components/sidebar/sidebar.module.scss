@@ -1,0 +1,107 @@
+.sidebar {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-right: 1px solid black;
+}
+
+.title-setting {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .setting {
+        position: absolute;
+        border: 2px solid gray;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 5px;
+        background-color: rgb(196, 196, 196);
+    }
+
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    width: 328px;
+    height: 36px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: azure;
+
+    .search-icon {
+        margin: 5px;
+    }
+
+    .search {
+        outline: none;
+        color: rgb(22, 22, 22);
+        font-weight: 600;
+    }
+
+    .toolbar {
+        background-color: red;
+
+        :nth-child(1) {
+            border-radius: 20%;
+        }
+    }
+}
+
+.new-post-btn {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    width: 21rem;
+
+    button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 21rem;
+        height: 36px;
+        font-size: 20px;
+        background-color: aquamarine;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(170, 252, 223);
+        }
+    }
+
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-bottom: 3px solid black;
+    width: 21rem;
+
+    h3,
+    p {
+        margin-left: 10px;
+    }
+
+    h3 {
+        font-weight: 700;
+
+    }
+
+    p {
+        color: blue;
+        margin-bottom: 10px;
+    }
+}
+
+.fields {
+    margin-top: 10px;
+
+}
